@@ -17,3 +17,40 @@ body{
     display: block;
     border-radius: 15px;
 }
+
+/* Styling for the cells to make them all match */
+
+.table th, 
+.table td {
+    width: 14.28%;
+    text-align: left; 
+    vertical-align: middle;
+    height: 65px; 
+    font-weight: bold; 
+}
+
+/* Gotta slap !important on things to make sure we are prioritized over bootstrap */
+
+.table-secondary{
+    border-left: 4px solid #007bff !important; 
+}
+
+.table th {
+    border-left: none; 
+    text-align: center; 
+    font-weight: bolder; 
+}
+
+/* We're just slapping !important on everything now arent we */
+
+.highlight-green {
+    border-left: 4px solid #28a745 !important; 
+}
+
+.table td:empty {
+    border-left: none !important;
+}
+
+.sunday {
+    border-left: 4px solid red !important;
+}
